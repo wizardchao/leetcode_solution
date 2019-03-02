@@ -1,0 +1,16 @@
+{
+  "name": "wizardchao/leetcode_solution",
+  "description": "used to solve leetcode's solution",
+  "type": "composer-plugin",
+  "authors": [{
+    "name": "wizardchao",
+    "email": "kevin@wizardchao.com.cn"
+  }],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Solution\\": "src/Solution"
+    }
+  }
+}
