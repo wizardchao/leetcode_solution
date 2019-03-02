@@ -3,7 +3,8 @@
 require_once('./vendor/autoload.php');
 
 use Solution\Solution;
-
+$solution=new Solution();
+$re=$solution->solve();exit;
 $param_arr = getopt('q:f:p:r');
 $problems_name=$param_arr['q'];  //问题名
 $fun_name=$param_arr['f']; //函数名
@@ -15,8 +16,7 @@ if (empty($problems_name) && empty($fun_name)) {
     'message' =>'参数不能为空！',
   ));
 }
-$solution=new Solution();
-$re=$solution->solve();
+
 
 if (!is_dir(__DIR__.'/problems')) {
     mkdir(__DIR__.'/problems', 0777);
